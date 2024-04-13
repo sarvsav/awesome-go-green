@@ -1,0 +1,13 @@
+apiVersion: kube-green.com/v1alpha1
+kind: SleepInfo
+metadata:
+  name: sleep-test
+spec:
+  weekdays: "*"
+  sleepAt: "15:30"
+  wakeUpAt: "15:32"
+  timeZone: "Asia/Kolkata"
+  excludeRef:
+    - apiVersion: "apps/v1"
+      kind:       Deployment
+      name:       do-not-sleep

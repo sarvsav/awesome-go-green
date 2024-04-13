@@ -1,0 +1,38 @@
+apiVersion: kube-green.com/v1alpha1
+kind: SleepInfo
+metadata:
+  name: working-hours
+spec:
+  weekdays: "1-5"
+  sleepAt: "20:00"
+  wakeUpAt: "08:00"
+  timeZone: "Asia/Kolkata"
+  suspendCronJobs: true
+  patches:
+    - target:
+        group: apps
+        kind: Deployment
+        # labelSelector: "env=dev"
+      patches: |-
+        - path: /spec/replicas
+          op: replace
+          value: 0
+    - target:
+        group: batch
+        kind: CronJob
+      patches: |-
+        - path: /spec/suspend
+          op: replace
+          value: true
+  # disableDefaultPatches: true
+  # defaultPatches:
+  # - group: apps
+  #   kind: Deployment
+  #   enabled: true
+  # - group: batch
+  #   kind: CronJob
+  #   enabled: false
+  excludeRef:
+    - apiVersion: "apps/v1"
+      kind:       Deployment
+      name:       api-gateway
