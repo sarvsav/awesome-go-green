@@ -13,6 +13,8 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Infrastructure 🏗️](#infrastructure-️)
     - [Hosting 🌐](#hosting-)
     - [Kubernetes ☸️](#kubernetes-️)
+  - [Contributors](#contributors)
+  - [Adopters](#adopters)
 
 ## Software 💻
 
@@ -29,3 +31,19 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Project     | Description      | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [kube-green](https://kube-green.dev/) | An operator to reduce CO2 footprint of your clusters | [README.md](./infrastructure/kubernetes/kube-green/README.md) |
+
+## Contributors
+
+Big thanks to our contributors.
+
+<a href="https://github.com/sarvsav/awesome-go-green/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sarvsav/awesome-go-green" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
+## Adopters
+
+📢 If you're using green 🌳 practices in your organization, please add your company name to [this list](./ADOPTERS.md).
+
+By adding yourself to the [ADOPTERS.md](./ADOPTERS.md) file, you help increase the project's visibility and credibility, which is essential for its growth.
