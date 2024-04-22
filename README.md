@@ -13,6 +13,8 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Infrastructure 🏗️](#infrastructure-️)
     - [Hosting 🌐](#hosting-)
     - [Kubernetes ☸️](#kubernetes-️)
+  - [Events 🎊](#events-)
+    - [World Earth Day 🌎](#world-earth-day-)
   - [Contributors](#contributors)
   - [Adopters](#adopters)
 
@@ -31,6 +33,14 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Project     | Description      | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [kube-green](https://kube-green.dev/) | An operator to reduce CO2 footprint of your clusters | [README.md](./infrastructure/kubernetes/kube-green/README.md) |
+
+## Events 🎊
+
+### World Earth Day 🌎
+
+| Name | Date | Usage or Example |
+| ------- | ----------- | ---------------- |
+| [Earth Day](https://en.wikipedia.org/wiki/Earth_Day) | 22nd April | [README.md](.events/world-earth-day/README.md) |
 
 ## Contributors
 
