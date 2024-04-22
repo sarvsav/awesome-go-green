@@ -40,7 +40,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 | Name | Date | Usage or Example |
 | ------- | ----------- | ---------------- |
-| [Earth Day](https://en.wikipedia.org/wiki/Earth_Day) | 22nd April | [README.md](.events/world-earth-day/README.md) |
+| [Earth Day](https://en.wikipedia.org/wiki/Earth_Day) | 22nd April | [README.md](./events/world-earth-day/README.md) |
 
 ## Contributors
 
