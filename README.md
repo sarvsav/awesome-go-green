@@ -33,6 +33,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Project     | Description      | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [kube-green](https://kube-green.dev/) | An operator to reduce CO2 footprint of your clusters | [README.md](./infrastructure/kubernetes/kube-green/README.md) |
+|[kepler](https://sustainable-computing.io/)| Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.| [README.md](./infrastructure/kubernetes/kepler/README.md) |
 
 ## Events 🎊
 
