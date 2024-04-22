@@ -6,7 +6,7 @@ Source: [Wikipidea](https://en.wikipedia.org/wiki/Earth_Day)
 
 ## Earth Day Flag 🟩
 
-![Earth Day Flag](./assets/Earth_Day_Flag.png)
+![Earth Day Flag](./assets/Earth_Day_Flag.jpg)
 
 The unofficial Earth Flag created by John McConnell includes The Blue Marble photograph taken by the crew of Apollo 17.
 
