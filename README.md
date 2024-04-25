@@ -52,6 +52,8 @@ Big thanks to our contributors.
 
 Made with [contrib.rocks](https://contrib.rocks).
 
+Kindly read the [contributing guide](./CONTRIBUTING.md) to contribute to the project.
+
 ## Adopters
 
 📢 If you're using green 🌳 practices in your organization, please add your company name to [this list](./ADOPTERS.md).
