@@ -1,0 +1,17 @@
+name: Software practice for green development
+description: Create an issue to introduce software practiice that helps for green development.
+labels: ["software", "needs-triage"]
+assignees: "sarvsav"
+title: "[Software Practice] <Write one line here>"
+
+body:
+  - type: textarea
+    id: info
+    attributes:
+      label: Information
+      description: |
+        - Please provide information about the software practice:
+          - Give a reference link about it.
+      value: |
+        - **Software practice**:
+          - **Reference link**:

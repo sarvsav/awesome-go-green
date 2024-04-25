@@ -1,0 +1,21 @@
+name: Any event for green development
+description: Create an issue to introduce event related to green development.
+labels: ["events", "needs-triage"]
+assignees: "sarvsav"
+title: "[Events] <Write one line here>"
+
+body:
+  - type: textarea
+    id: info
+    attributes:
+      label: Information
+      description: |
+        - Please provide information about the event:
+          - Is it a virtual or physical event?
+          - Provide a link to the event.
+          - What is the date and time of the event?
+      value: |
+        - **Event**:
+          - **Virtual or Physical**:
+          - **Event link**:
+          - **Date and Time**:

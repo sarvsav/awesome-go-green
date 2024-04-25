@@ -1,0 +1,21 @@
+name: Tool for green development
+description: Create an issue to introduce tool that helps for green development.
+labels: ["tool", "needs-triage"]
+assignees: "sarvsav"
+title: "[Tool] <Write you tool name here with one liner>"
+
+body:
+  - type: textarea
+    id: info
+    attributes:
+      label: Information
+      description: |
+        - Please provide information about the tool:
+          - is it open source?
+          - in which language is it written?
+          - provide a link to the repository.
+      value: |
+        - **A short description of the tool**:
+          - **Is it open source?**:
+          - **Language**:
+          - **Repository link**:

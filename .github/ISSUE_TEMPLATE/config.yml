@@ -1,0 +1,7 @@
+## Disable the blank issues and generate links for secuirty
+
+blank_issues_enabled: false
+contact_links:
+  - name: Awesome Green Development support
+    url: https://sarvsav.github.io/awesome-go-green/
+    about: Please write your questions here.
