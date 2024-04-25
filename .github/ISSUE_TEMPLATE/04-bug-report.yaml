@@ -1,0 +1,20 @@
+name: Found a bug or broken link in the project
+description: Create an issue to report a bug or broken link in the project.
+labels: ["bug", "needs-triage"]
+assignees: "sarvsav"
+title: "[Bug] <Write one line here>"
+
+body:
+  - type: textarea
+    id: info
+    attributes:
+      label: Bug or Broken link
+      description: |
+        - Please provide information about the bug or broken link:
+          - What is the bug or broken link?
+          - Provide a link to the page where the bug or broken link is found.
+          - What is the expected behavior?
+      value: |
+        - **Bug or Broken link**:
+          - **Link**:
+          - **Expected behavior**:
