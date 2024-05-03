@@ -125,6 +125,27 @@ And, then simply upload the JSON files, and access it.
 
 With help of the dashboard you can monitor the resources, and can optimize the usage.
 
+## How to unistall?
+
+1. List all the deployments.
+
+```bash
+$ helm list --all-namespaces | awk '{print $1, $2}'
+NAME            NAMESPACE
+kepler          kepler
+prometheus      monitoring
+```
+
+2. Uninstall the deployment.
+
+```bash
+$ helm uninstall kepler --namespace kepler
+release "kepler" uninstalled
+
+$ helm uninstall prometheus --namespace monitoring
+release "prometheus" uninstalled
+```
+
 ## Thank you
 
 Thank you for contributing towards the green development 🌍.
