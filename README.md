@@ -53,7 +53,7 @@ Big thanks to our contributors.
 
 Made with [contrib.rocks](https://contrib.rocks).
 
-Kindly read the [contributing guide](./CONTRIBUTING.md) to contribute to the project.
+Kindly read the contributing guide, [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute to the project.
 
 ## Adopters
 
