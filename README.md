@@ -53,7 +53,7 @@ Big thanks to our contributors.
 
 Made with [contrib.rocks](https://contrib.rocks).
 
-Kindly read the contributing guide, [CONTRIBUTING.md](./CONTRIBUTING.md) to contribute to the project.
+Kindly refer to the [contributing guide](https://github.com/sarvsav/awesome-go-green/blob/main/CONTRIBUTING.md) to contribute to the project.
 
 ## Adopters
 
