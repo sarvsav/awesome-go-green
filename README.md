@@ -43,7 +43,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 | Name | Cost | Usage or Example |
 | ------- | ----------- | ---------------- |
-| [Green Software for Practitioners (LFC131)](https://trainingportal.linuxfoundation.org/courses/green-software-for-practitioners-lfc131) | Free | [README.md](./resources/trainings/lfc-131/README.md) |
+| [Green Software for Practitioners (LFC131)](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/) | Free | [README.md](./resources/trainings/lfc-131/README.md) |
 
 ## Events 🎊
 

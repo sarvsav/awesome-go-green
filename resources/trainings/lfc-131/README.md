@@ -4,7 +4,7 @@ Learn the basic concepts a software practitioner needs to know to build, maintai
 
 ## How to register
 
-You can register from The Linux Foundation using this [Green Software for Practitioners (LFC131)](https://trainingportal.linuxfoundation.org/courses/green-software-for-practitioners-lfc131)
+You can register from The Linux Foundation using this [Green Software for Practitioners (LFC131)](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/)
 
 ## Learning objectives
 
