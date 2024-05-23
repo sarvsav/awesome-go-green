@@ -13,10 +13,12 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Infrastructure 🏗️](#infrastructure-️)
     - [Hosting 🌐](#hosting-)
     - [Kubernetes ☸️](#kubernetes-️)
+  - [Resources 📘](#resources-)
+    - [Trainings 👩‍🏫](#trainings-)
   - [Events 🎊](#events-)
     - [World Earth Day 🌎](#world-earth-day-)
-  - [Contributors](#contributors)
-  - [Adopters](#adopters)
+  - [Contributors 🤝](#contributors-)
+  - [Adopters 🧑‍🤝‍🧑](#adopters-)
 
 ## Software 💻
 
@@ -35,6 +37,14 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | [kube-green](https://kube-green.dev/) | An operator to reduce CO2 footprint of your clusters | [README.md](./infrastructure/kubernetes/kube-green/README.md) |
 |[kepler](https://sustainable-computing.io/)| Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.| [README.md](./infrastructure/kubernetes/kepler/README.md) |
 
+## Resources 📘
+
+### Trainings 👩‍🏫
+
+| Name | Cost | Usage or Example |
+| ------- | ----------- | ---------------- |
+| [Green Software for Practitioners (LFC131)](https://trainingportal.linuxfoundation.org/courses/green-software-for-practitioners-lfc131) | Free | [README.md](./resources/trainings/lfc-131/README.md) |
+
 ## Events 🎊
 
 ### World Earth Day 🌎
@@ -43,7 +53,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | ------- | ----------- | ---------------- |
 | [Earth Day](https://en.wikipedia.org/wiki/Earth_Day) | 22nd April | [README.md](./events/world-earth-day/README.md) |
 
-## Contributors
+## Contributors 🤝
 
 Big thanks to our contributors.
 
@@ -55,7 +65,7 @@ Made with [contrib.rocks](https://contrib.rocks).
 
 Kindly refer to the [contributing guide](https://github.com/sarvsav/awesome-go-green/blob/main/CONTRIBUTING.md) to contribute to the project.
 
-## Adopters
+## Adopters 🧑‍🤝‍🧑
 
 📢 If you're using green 🌳 practices in your organization, please add your company name to [this list](./ADOPTERS.md).
 
