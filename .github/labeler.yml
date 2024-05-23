@@ -7,22 +7,22 @@ root:
 # Add Software label to any changes to the software directory or any of its subdirectories
 software:
 - changed-files:
-  - any-glob-to-software-dir: 'software/**'
+  - any-glob-to-any-file: 'software/**'
 
 # Add Infrastructure label to any changes to the infrastructure directory or any of its subdirectories
 infrastructure:
 - changed-files:
-  - any-glob-to-infrastructure-dir: 'infrastructure/**'
+  - any-glob-to-any-file: 'infrastructure/**'
 
 # Add events label to any changes to the events directory or any of its subdirectories
 events:
 - changed-files:
-  - any-glob-to-events-dir: 'events/**'
+  - any-glob-to-any-file: 'events/**'
 
 # Add cicd label to any changes to the .github/workflows directory or any of its subdirectories
 cicd:
 - changed-files:
-  - any-glob-to-cicd-dir: '.github/workflows/**'
+  - any-glob-to-any-file: '.github/workflows/**'
 
 # Add 'release' label to any PR that is opened against the `main` branch
 release:
