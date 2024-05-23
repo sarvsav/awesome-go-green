@@ -2,6 +2,10 @@
 
 Learn the basic concepts a software practitioner needs to know to build, maintain and run greener applications
 
+## How to register
+
+You can register from The Linux Foundation using this [Green Software for Practitioners (LFC131)](https://trainingportal.linuxfoundation.org/courses/green-software-for-practitioners-lfc131)
+
 ## Learning objectives
 
 By the end of this course, you should be able to:
@@ -50,6 +54,10 @@ R is the core characteristic of the SCI and turns it into an intensity rather th
 ## Course completion
 
 Upon finishing the final exam after completing the theory chapters, you will receive a course completion certificate and badge from credly.
+
+## Certificate completed
+
+Add your name and public link to your credly badge [HERE](Certificates.md).
 
 ## Thank you
 
