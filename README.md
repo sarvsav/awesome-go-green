@@ -22,6 +22,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Events 🎊](#events-)
     - [World Earth Day 🌎](#world-earth-day-)
   - [Contributors 🤝](#contributors-)
+  - [Community and Support 💬](#community-and-support-)
   - [Adopters 🧑‍🤝‍🧑](#adopters-)
 
 ## Software 💻
@@ -92,6 +93,16 @@ Big thanks to our contributors.
 Made with [contrib.rocks](https://contrib.rocks).
 
 Kindly refer to the [contributing guide](https://github.com/sarvsav/awesome-go-green/blob/main/CONTRIBUTING.md) to contribute to the project.
+
+## Community and Support 💬
+
+Stay connected with our community and stay updated with the latest developments:
+
+- **Join us on Discord**: Click the badge below to join our community on Discord where you can ask questions, share ideas, and get support from other users and the development team.
+  [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA)](https://discord.gg/gSUU7xZHCA)
+
+- **Watch the repository**: Click the "Watch" button on the top right of this repository to get notified about the latest updates.
+  [![Watch Repo](https://img.shields.io/github/watchers/sarvsav/awesome-go-green?style=social)](https://github.com/sarvsav/awesome-go-green/watchers)
 
 ## Adopters 🧑‍🤝‍🧑
 
