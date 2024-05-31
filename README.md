@@ -15,6 +15,10 @@ Enjoying our collection of tools for green development 🌱? Show your support b
     - [Kubernetes ☸️](#kubernetes-️)
   - [Resources 📘](#resources-)
     - [Trainings 👩‍🏫](#trainings-)
+    - [Books 📚](#books-)
+    - [Podcasts 🎙️](#podcasts-️)
+    - [Groups 👥](#groups-)
+    - [Helpful Links 🔗](#helpful-links-)
   - [Events 🎊](#events-)
     - [World Earth Day 🌎](#world-earth-day-)
   - [Contributors 🤝](#contributors-)
@@ -44,6 +48,30 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Name | Cost | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [Green Software for Practitioners (LFC131)](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/) | Free | [README.md](./resources/trainings/lfc-131/README.md) |
+
+### Books 📚
+
+| Name | Cost | Usage or Example |
+| ------- | ----------- | ---------------- |
+| [Building Green Software](https://www.amazon.co.uk/Building-Green-Software-Sustainable-Development/dp/1098150627) | Paid | [README.md](./resources/books/building-green-software/README.md) |
+
+### Podcasts 🎙️
+
+| Name | Host | Details |
+| ------- | ----------- | ---------------- |
+| [Environment Variables](https://podcast.greensoftware.foundation/) | The Green Software Foundation | [README.md](./resources/podcasts/environment-variables/README.md) |
+
+### Groups 👥
+
+| Name | Membership | Details |
+| ------- | ----------- | ---------------- |
+| [Green Software Ireland](https://www.meetup.com/green_software_ireland/) | Public | [README.md](./resources/groups/green-software-ireland/README.md) |
+
+### Helpful Links 🔗
+
+| Name | Description | Usage or Example  |
+| ------- | ----------- | ---------------- |
+| [Electricity Maps](https://app.electricitymaps.com/map) | Climate Impact by Area | [README.md](./resources/helpful-links/electricity-maps/README.md) |
 
 ## Events 🎊
 
