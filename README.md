@@ -24,6 +24,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Contributors 🤝](#contributors-)
   - [Community and Support 💬](#community-and-support-)
   - [Adopters 🧑‍🤝‍🧑](#adopters-)
+  - [Thank you ❤️](#thank-you-️)
 
 ## Software 💻
 
@@ -109,3 +110,7 @@ Stay connected with our community and stay updated with the latest developments:
 📢 If you're using green 🌳 practices in your organization, please add your company name to [this list](./ADOPTERS.md).
 
 By adding yourself to the [ADOPTERS.md](./ADOPTERS.md) file, you help increase the project's visibility and credibility, which is essential for its growth.
+
+## Thank you ❤️
+
+Thank you for taking the step towards the green development 🌍.
