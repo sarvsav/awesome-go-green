@@ -33,6 +33,10 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 ### Cloud ☁️
 
+| Project     | Description      | Usage or Example |
+| ------- | ----------- | ---------------- |
+|[Teads Engineering](https://engineering.teads.com/sustainability/carbon-footprint-estimator-for-aws-instances/)| Carbon footprint estimator for AWS instances| [README.md](./infrastructure/cloud/teads-engineering/README.md) |
+
 ### Kubernetes ☸️
 
 | Project     | Description      | Usage or Example |
