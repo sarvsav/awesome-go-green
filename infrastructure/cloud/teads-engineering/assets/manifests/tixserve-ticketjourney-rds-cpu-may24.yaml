@@ -1,0 +1,586 @@
+name: simple-aws
+description: A simple calculation of Carbon and energy from an AWS RDS DB
+tags:
+aggregation:
+  metrics:
+    - "carbon"
+    - "energy"
+  type: "vertical"
+initialize:
+  outputs:
+    - yaml
+  plugins:
+    "teads-aws":
+      method: TeadsAWS
+      path: "@grnsft/if-unofficial-plugins"
+      global-config:
+        interpolation: linear
+    sci-o:
+      method: SciO
+      path: "@grnsft/if-plugins"
+    sum:
+      method: Sum
+      path: "@grnsft/if-plugins"
+      global-config:
+        input-parameters: ["carbon-operational", "carbon-embodied"]
+        output-parameter: "carbon"
+    divide:
+      method: Divide
+      path: "@grnsft/if-plugins"
+      global-config:
+        numerator: carbon
+        denominator: ticket-journeys
+        output: sci (gCO2e/ticket-journey)
+tree:
+  children:
+    child:
+      pipeline:
+        - teads-aws
+        - sci-o
+        - sum
+        - divide
+      defaults:
+        cloud/instance-type: m5.xlarge
+        grid/carbon-intensity: 118.5
+        ticket-journeys: 446.9
+      inputs:
+        - timestamp: 2024-05-21T09:57:00.000Z
+          duration: 60
+          cpu/utilization: 9.595
+        - timestamp: 2024-05-21T09:58:00.000Z
+          duration: 60
+          cpu/utilization: 9.911666667
+        - timestamp: 2024-05-21T09:59:00.000Z
+          duration: 60
+          cpu/utilization: 10.03333333
+        - timestamp: 2024-05-21T10:00:00.000Z
+          duration: 60
+          cpu/utilization: 21.04166667
+        - timestamp: 2024-05-21T10:01:00.000Z
+          duration: 60
+          cpu/utilization: 13.46666667
+        - timestamp: 2024-05-21T10:02:00.000Z
+          duration: 60
+          cpu/utilization: 9.003333333
+        - timestamp: 2024-05-21T10:03:00.000Z
+          duration: 60
+          cpu/utilization: 9.036666667
+        - timestamp: 2024-05-21T10:04:00.000Z
+          duration: 60
+          cpu/utilization: 9.936666667
+        - timestamp: 2024-05-21T10:05:00.000Z
+          duration: 60
+          cpu/utilization: 10.50333333
+        - timestamp: 2024-05-21T10:06:00.000Z
+          duration: 60
+          cpu/utilization: 10.00333333
+        - timestamp: 2024-05-21T10:07:00.000Z
+          duration: 60
+          cpu/utilization: 9.703333333
+        - timestamp: 2024-05-21T10:08:00.000Z
+          duration: 60
+          cpu/utilization: 9.728333333
+        - timestamp: 2024-05-21T10:09:00.000Z
+          duration: 60
+          cpu/utilization: 10.225
+        - timestamp: 2024-05-21T10:10:00.000Z
+          duration: 60
+          cpu/utilization: 9.933333333
+        - timestamp: 2024-05-21T10:11:00.000Z
+          duration: 60
+          cpu/utilization: 10.31666667
+        - timestamp: 2024-05-21T10:12:00.000Z
+          duration: 60
+          cpu/utilization: 9.683333333
+        - timestamp: 2024-05-21T10:13:00.000Z
+          duration: 60
+          cpu/utilization: 9.570159503
+        - timestamp: 2024-05-21T10:14:00.000Z
+          duration: 60
+          cpu/utilization: 9.858004733
+        - timestamp: 2024-05-21T10:15:00.000Z
+          duration: 60
+          cpu/utilization: 10.18350306
+        - timestamp: 2024-05-21T10:16:00.000Z
+          duration: 60
+          cpu/utilization: 9.933333333
+        - timestamp: 2024-05-21T10:17:00.000Z
+          duration: 60
+          cpu/utilization: 9.841666667
+        - timestamp: 2024-05-21T10:18:00.000Z
+          duration: 60
+          cpu/utilization: 9.745
+        - timestamp: 2024-05-21T10:19:00.000Z
+          duration: 60
+          cpu/utilization: 9.67
+        - timestamp: 2024-05-21T10:20:00.000Z
+          duration: 60
+          cpu/utilization: 10.28666667
+        - timestamp: 2024-05-21T10:21:00.000Z
+          duration: 60
+          cpu/utilization: 10.225
+        - timestamp: 2024-05-21T10:22:00.000Z
+          duration: 60
+          cpu/utilization: 9.803333333
+        - timestamp: 2024-05-21T10:23:00.000Z
+          duration: 60
+          cpu/utilization: 9.661666667
+        - timestamp: 2024-05-21T10:24:00.000Z
+          duration: 60
+          cpu/utilization: 9.65
+        - timestamp: 2024-05-21T10:25:00.000Z
+          duration: 60
+          cpu/utilization: 10.15333333
+        - timestamp: 2024-05-21T10:26:00.000Z
+          duration: 60
+          cpu/utilization: 9.908333333
+        - timestamp: 2024-05-21T10:27:00.000Z
+          duration: 60
+          cpu/utilization: 9.92
+        - timestamp: 2024-05-21T10:28:00.000Z
+          duration: 60
+          cpu/utilization: 9.375
+        - timestamp: 2024-05-21T10:29:00.000Z
+          duration: 60
+          cpu/utilization: 9.683333333
+        - timestamp: 2024-05-21T10:30:00.000Z
+          duration: 60
+          cpu/utilization: 10.84166667
+        - timestamp: 2024-05-21T10:31:00.000Z
+          duration: 60
+          cpu/utilization: 10.495
+        - timestamp: 2024-05-21T10:32:00.000Z
+          duration: 60
+          cpu/utilization: 9.578333333
+        - timestamp: 2024-05-21T10:33:00.000Z
+          duration: 60
+          cpu/utilization: 10.43350723
+        - timestamp: 2024-05-21T10:34:00.000Z
+          duration: 60
+          cpu/utilization: 9.666344455
+        - timestamp: 2024-05-21T10:35:00.000Z
+          duration: 60
+          cpu/utilization: 11.65352756
+        - timestamp: 2024-05-21T10:36:00.000Z
+          duration: 60
+          cpu/utilization: 10.02
+        - timestamp: 2024-05-21T10:37:00.000Z
+          duration: 60
+          cpu/utilization: 10
+        - timestamp: 2024-05-21T10:38:00.000Z
+          duration: 60
+          cpu/utilization: 9.625
+        - timestamp: 2024-05-21T10:39:00.000Z
+          duration: 60
+          cpu/utilization: 10.4
+        - timestamp: 2024-05-21T10:40:00.000Z
+          duration: 60
+          cpu/utilization: 10.675
+        - timestamp: 2024-05-21T10:41:00.000Z
+          duration: 60
+          cpu/utilization: 10.045
+        - timestamp: 2024-05-21T10:42:00.000Z
+          duration: 60
+          cpu/utilization: 9.678494642
+        - timestamp: 2024-05-21T10:43:00.000Z
+          duration: 60
+          cpu/utilization: 9.816339455
+        - timestamp: 2024-05-21T10:44:00.000Z
+          duration: 60
+          cpu/utilization: 9.620160336
+        - timestamp: 2024-05-21T10:45:00.000Z
+          duration: 60
+          cpu/utilization: 10.70833333
+        - timestamp: 2024-05-21T10:46:00.000Z
+          duration: 60
+          cpu/utilization: 9.891666667
+        - timestamp: 2024-05-21T10:47:00.000Z
+          duration: 60
+          cpu/utilization: 9.828333333
+        - timestamp: 2024-05-21T10:48:00.000Z
+          duration: 60
+          cpu/utilization: 9.866666667
+        - timestamp: 2024-05-21T10:49:00.000Z
+          duration: 60
+          cpu/utilization: 9.441666667
+        - timestamp: 2024-05-21T10:50:00.000Z
+          duration: 60
+          cpu/utilization: 10.25264982
+        - timestamp: 2024-05-21T10:51:00.000Z
+          duration: 60
+          cpu/utilization: 10.13734249
+        - timestamp: 2024-05-21T10:52:00.000Z
+          duration: 60
+          cpu/utilization: 9.736666667
+        - timestamp: 2024-05-21T10:53:00.000Z
+          duration: 60
+          cpu/utilization: 9.886831447
+        - timestamp: 2024-05-21T10:54:00.000Z
+          duration: 60
+          cpu/utilization: 9.641345288
+        - timestamp: 2024-05-21T10:55:00.000Z
+          duration: 60
+          cpu/utilization: 10.59517659
+        - timestamp: 2024-05-21T10:56:00.000Z
+          duration: 60
+          cpu/utilization: 9.966666667
+        - timestamp: 2024-05-21T10:57:00.000Z
+          duration: 60
+          cpu/utilization: 10.06183436
+        - timestamp: 2024-05-21T10:58:00.000Z
+          duration: 60
+          cpu/utilization: 9.578014066
+        - timestamp: 2024-05-21T10:59:00.000Z
+          duration: 60
+          cpu/utilization: 10.05
+        - timestamp: 2024-05-21T11:00:00.000Z
+          duration: 60
+          cpu/utilization: 27.50379173
+        - timestamp: 2024-05-21T11:01:00.000Z
+          duration: 60
+          cpu/utilization: 34.045
+        - timestamp: 2024-05-21T11:02:00.000Z
+          duration: 60
+          cpu/utilization: 13.56166667
+        - timestamp: 2024-05-21T11:03:00.000Z
+          duration: 60
+          cpu/utilization: 10.45
+        - timestamp: 2024-05-21T11:04:00.000Z
+          duration: 60
+          cpu/utilization: 10.01683361
+        - timestamp: 2024-05-21T11:05:00.000Z
+          duration: 60
+          cpu/utilization: 10.72482125
+        - timestamp: 2024-05-21T11:06:00.000Z
+          duration: 60
+          cpu/utilization: 10.22833333
+        - timestamp: 2024-05-21T11:07:00.000Z
+          duration: 60
+          cpu/utilization: 9.758333333
+        - timestamp: 2024-05-21T11:08:00.000Z
+          duration: 60
+          cpu/utilization: 10.30333333
+        - timestamp: 2024-05-21T11:09:00.000Z
+          duration: 60
+          cpu/utilization: 10.25350423
+        - timestamp: 2024-05-21T11:10:00.000Z
+          duration: 60
+          cpu/utilization: 10.47482542
+        - timestamp: 2024-05-21T11:11:00.000Z
+          duration: 60
+          cpu/utilization: 10.83666667
+        - timestamp: 2024-05-21T11:12:00.000Z
+          duration: 60
+          cpu/utilization: 9.566666667
+        - timestamp: 2024-05-21T11:13:00.000Z
+          duration: 60
+          cpu/utilization: 9.766666667
+        - timestamp: 2024-05-21T11:14:00.000Z
+          duration: 60
+          cpu/utilization: 9.928498808
+        - timestamp: 2024-05-21T11:15:00.000Z
+          duration: 60
+          cpu/utilization: 10.48315861
+        - timestamp: 2024-05-21T11:16:00.000Z
+          duration: 60
+          cpu/utilization: 9.966666667
+        - timestamp: 2024-05-21T11:17:00.000Z
+          duration: 60
+          cpu/utilization: 10.095
+        - timestamp: 2024-05-21T11:18:00.000Z
+          duration: 60
+          cpu/utilization: 9.778496308
+        - timestamp: 2024-05-21T11:19:00.000Z
+          duration: 60
+          cpu/utilization: 9.886337122
+        - timestamp: 2024-05-21T11:20:00.000Z
+          duration: 60
+          cpu/utilization: 10.00350006
+        - timestamp: 2024-05-21T11:21:00.000Z
+          duration: 60
+          cpu/utilization: 10.775
+        - timestamp: 2024-05-21T11:22:00.000Z
+          duration: 60
+          cpu/utilization: 9.57
+        - timestamp: 2024-05-21T11:23:00.000Z
+          duration: 60
+          cpu/utilization: 10.33666667
+        - timestamp: 2024-05-21T11:24:00.000Z
+          duration: 60
+          cpu/utilization: 9.258333333
+        - timestamp: 2024-05-21T11:25:00.000Z
+          duration: 60
+          cpu/utilization: 9.661666667
+        - timestamp: 2024-05-21T11:26:00.000Z
+          duration: 60
+          cpu/utilization: 10.41666667
+        - timestamp: 2024-05-21T11:27:00.000Z
+          duration: 60
+          cpu/utilization: 9.836666667
+        - timestamp: 2024-05-21T11:28:00.000Z
+          duration: 60
+          cpu/utilization: 9.5
+        - timestamp: 2024-05-21T11:29:00.000Z
+          duration: 60
+          cpu/utilization: 9.8
+        - timestamp: 2024-05-21T11:30:00.000Z
+          duration: 60
+          cpu/utilization: 10.50833333
+        - timestamp: 2024-05-21T11:31:00.000Z
+          duration: 60
+          cpu/utilization: 10.12
+        - timestamp: 2024-05-21T11:32:00.000Z
+          duration: 60
+          cpu/utilization: 10.14166667
+        - timestamp: 2024-05-21T11:33:00.000Z
+          duration: 60
+          cpu/utilization: 9.391666667
+        - timestamp: 2024-05-21T11:34:00.000Z
+          duration: 60
+          cpu/utilization: 9.67
+        - timestamp: 2024-05-21T11:35:00.000Z
+          duration: 60
+          cpu/utilization: 10.02
+        - timestamp: 2024-05-21T11:36:00.000Z
+          duration: 60
+          cpu/utilization: 9.886666667
+        - timestamp: 2024-05-21T11:37:00.000Z
+          duration: 60
+          cpu/utilization: 10.125
+        - timestamp: 2024-05-21T11:38:00.000Z
+          duration: 60
+          cpu/utilization: 10.345
+        - timestamp: 2024-05-21T11:39:00.000Z
+          duration: 60
+          cpu/utilization: 10.41666667
+        - timestamp: 2024-05-21T11:40:00.000Z
+          duration: 60
+          cpu/utilization: 9.894340377
+        - timestamp: 2024-05-21T11:41:00.000Z
+          duration: 60
+          cpu/utilization: 10.13400893
+        - timestamp: 2024-05-21T11:42:00.000Z
+          duration: 60
+          cpu/utilization: 10.25333333
+        - timestamp: 2024-05-21T11:43:00.000Z
+          duration: 60
+          cpu/utilization: 9.945
+        - timestamp: 2024-05-21T11:44:00.000Z
+          duration: 60
+          cpu/utilization: 9.933333333
+        - timestamp: 2024-05-21T11:45:00.000Z
+          duration: 60
+          cpu/utilization: 10.52
+        - timestamp: 2024-05-21T11:46:00.000Z
+          duration: 60
+          cpu/utilization: 10.35333333
+        - timestamp: 2024-05-21T11:47:00.000Z
+          duration: 60
+          cpu/utilization: 10.11166667
+        - timestamp: 2024-05-21T11:48:00.000Z
+          duration: 60
+          cpu/utilization: 9.92
+        - timestamp: 2024-05-21T11:49:00.000Z
+          duration: 60
+          cpu/utilization: 9.766666667
+        - timestamp: 2024-05-21T11:50:00.000Z
+          duration: 60
+          cpu/utilization: 10.61666667
+        - timestamp: 2024-05-21T11:51:00.000Z
+          duration: 60
+          cpu/utilization: 10.44166667
+        - timestamp: 2024-05-21T11:52:00.000Z
+          duration: 60
+          cpu/utilization: 10.045
+        - timestamp: 2024-05-21T11:53:00.000Z
+          duration: 60
+          cpu/utilization: 9.72
+        - timestamp: 2024-05-21T11:54:00.000Z
+          duration: 60
+          cpu/utilization: 10.495
+        - timestamp: 2024-05-21T11:55:00.000Z
+          duration: 60
+          cpu/utilization: 10.68666667
+        - timestamp: 2024-05-21T11:56:00.000Z
+          duration: 60
+          cpu/utilization: 9.811666667
+        - timestamp: 2024-05-21T11:57:00.000Z
+          duration: 60
+          cpu/utilization: 10.01166667
+        - timestamp: 2024-05-21T11:58:00.000Z
+          duration: 60
+          cpu/utilization: 10.4
+        - timestamp: 2024-05-21T11:59:00.000Z
+          duration: 60
+          cpu/utilization: 9.77
+        - timestamp: 2024-05-21T12:00:00.000Z
+          duration: 60
+          cpu/utilization: 10.84166667
+        - timestamp: 2024-05-21T12:01:00.000Z
+          duration: 60
+          cpu/utilization: 9.941666667
+        - timestamp: 2024-05-21T12:02:00.000Z
+          duration: 60
+          cpu/utilization: 9.728333333
+        - timestamp: 2024-05-21T12:03:00.000Z
+          duration: 60
+          cpu/utilization: 9.775
+        - timestamp: 2024-05-21T12:04:00.000Z
+          duration: 60
+          cpu/utilization: 9.67
+        - timestamp: 2024-05-21T12:05:00.000Z
+          duration: 60
+          cpu/utilization: 10.68333333
+        - timestamp: 2024-05-21T12:06:00.000Z
+          duration: 60
+          cpu/utilization: 9.908333333
+        - timestamp: 2024-05-21T12:07:00.000Z
+          duration: 60
+          cpu/utilization: 10.37
+        - timestamp: 2024-05-21T12:08:00.000Z
+          duration: 60
+          cpu/utilization: 9.445
+        - timestamp: 2024-05-21T12:09:00.000Z
+          duration: 60
+          cpu/utilization: 10.28333333
+        - timestamp: 2024-05-21T12:10:00.000Z
+          duration: 60
+          cpu/utilization: 9.75
+        - timestamp: 2024-05-21T12:11:00.000Z
+          duration: 60
+          cpu/utilization: 10.32833333
+        - timestamp: 2024-05-21T12:12:00.000Z
+          duration: 60
+          cpu/utilization: 9.741666667
+        - timestamp: 2024-05-21T12:13:00.000Z
+          duration: 60
+          cpu/utilization: 9.95
+        - timestamp: 2024-05-21T12:14:00.000Z
+          duration: 60
+          cpu/utilization: 9.383333333
+        - timestamp: 2024-05-21T12:15:00.000Z
+          duration: 60
+          cpu/utilization: 10.19483009
+        - timestamp: 2024-05-21T12:16:00.000Z
+          duration: 60
+          cpu/utilization: 9.653494225
+        - timestamp: 2024-05-21T12:17:00.000Z
+          duration: 60
+          cpu/utilization: 9.886666667
+        - timestamp: 2024-05-21T12:18:00.000Z
+          duration: 60
+          cpu/utilization: 9.416666667
+        - timestamp: 2024-05-21T12:19:00.000Z
+          duration: 60
+          cpu/utilization: 9.933333333
+        - timestamp: 2024-05-21T12:20:00.000Z
+          duration: 60
+          cpu/utilization: 9.966666667
+        - timestamp: 2024-05-21T12:21:00.000Z
+          duration: 60
+          cpu/utilization: 9.928333333
+        - timestamp: 2024-05-21T12:22:00.000Z
+          duration: 60
+          cpu/utilization: 11.925
+        - timestamp: 2024-05-21T12:23:00.000Z
+          duration: 60
+          cpu/utilization: 9.466824447
+        - timestamp: 2024-05-21T12:24:00.000Z
+          duration: 60
+          cpu/utilization: 9.399686677
+        - timestamp: 2024-05-21T12:25:00.000Z
+          duration: 60
+          cpu/utilization: 10.07016784
+        - timestamp: 2024-05-21T12:26:00.000Z
+          duration: 60
+          cpu/utilization: 10.08333333
+        - timestamp: 2024-05-21T12:27:00.000Z
+          duration: 60
+          cpu/utilization: 10.11166667
+        - timestamp: 2024-05-21T12:28:00.000Z
+          duration: 60
+          cpu/utilization: 9.308333333
+        - timestamp: 2024-05-21T12:29:00.000Z
+          duration: 60
+          cpu/utilization: 9.350155836
+        - timestamp: 2024-05-21T12:30:00.000Z
+          duration: 60
+          cpu/utilization: 21.33631106
+        - timestamp: 2024-05-21T12:31:00.000Z
+          duration: 60
+          cpu/utilization: 14.26666667
+        - timestamp: 2024-05-21T12:32:00.000Z
+          duration: 60
+          cpu/utilization: 9.836666667
+        - timestamp: 2024-05-21T12:33:00.000Z
+          duration: 60
+          cpu/utilization: 9.445
+        - timestamp: 2024-05-21T12:34:00.000Z
+          duration: 60
+          cpu/utilization: 9.161666667
+        - timestamp: 2024-05-21T12:35:00.000Z
+          duration: 60
+          cpu/utilization: 10.10333333
+        - timestamp: 2024-05-21T12:36:00.000Z
+          duration: 60
+          cpu/utilization: 9.686666667
+        - timestamp: 2024-05-21T12:37:00.000Z
+          duration: 60
+          cpu/utilization: 9.778333333
+        - timestamp: 2024-05-21T12:38:00.000Z
+          duration: 60
+          cpu/utilization: 9.32
+        - timestamp: 2024-05-21T12:39:00.000Z
+          duration: 60
+          cpu/utilization: 9.753333333
+        - timestamp: 2024-05-21T12:40:00.000Z
+          duration: 60
+          cpu/utilization: 9.975
+        - timestamp: 2024-05-21T12:41:00.000Z
+          duration: 60
+          cpu/utilization: 10.545
+        - timestamp: 2024-05-21T12:42:00.000Z
+          duration: 60
+          cpu/utilization: 9.703333333
+        - timestamp: 2024-05-21T12:43:00.000Z
+          duration: 60
+          cpu/utilization: 9.916666667
+        - timestamp: 2024-05-21T12:44:00.000Z
+          duration: 60
+          cpu/utilization: 9.041817364
+        - timestamp: 2024-05-21T12:45:00.000Z
+          duration: 60
+          cpu/utilization: 10.34482759
+        - timestamp: 2024-05-21T12:46:00.000Z
+          duration: 60
+          cpu/utilization: 9.583333333
+        - timestamp: 2024-05-21T12:47:00.000Z
+          duration: 60
+          cpu/utilization: 9.908333333
+        - timestamp: 2024-05-21T12:48:00.000Z
+          duration: 60
+          cpu/utilization: 10.125
+        - timestamp: 2024-05-21T12:49:00.000Z
+          duration: 60
+          cpu/utilization: 9.341666667
+        - timestamp: 2024-05-21T12:50:00.000Z
+          duration: 60
+          cpu/utilization: 10.09166667
+        - timestamp: 2024-05-21T12:51:00.000Z
+          duration: 60
+          cpu/utilization: 9.978333333
+        - timestamp: 2024-05-21T12:52:00.000Z
+          duration: 60
+          cpu/utilization: 9.75
+        - timestamp: 2024-05-21T12:53:00.000Z
+          duration: 60
+          cpu/utilization: 9.45
+        - timestamp: 2024-05-21T12:54:00.000Z
+          duration: 60
+          cpu/utilization: 9.333333333
+        - timestamp: 2024-05-21T12:55:00.000Z
+          duration: 60
+          cpu/utilization: 9.978333333
+        - timestamp: 2024-05-21T12:56:00.000Z
+          duration: 60
+          cpu/utilization: 7.050117502
