@@ -1,6 +1,6 @@
 # Green Software Ireland
 
-![Green Software Ireland](green-software-ireland.png)
+![Green Software Ireland](./images/green-software-ireland.png)
 
 **Organizer**: [John Behan](https://www.meetup.com/members/129541712/)
 **Group**: [Link to meetup group](https://www.meetup.com/green_software_ireland/)

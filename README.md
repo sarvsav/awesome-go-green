@@ -11,8 +11,9 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 - [Awesome Go-Green 🌳](#awesome-go-green-)
   - [Software 💻](#software-)
   - [Infrastructure 🏗️](#infrastructure-️)
-    - [Hosting 🌐](#hosting-)
+    - [Cloud ☁️](#cloud-️)
     - [Kubernetes ☸️](#kubernetes-️)
+    - [Hosting 🌐](#hosting-)
   - [Resources 📘](#resources-)
     - [Trainings 👩‍🏫](#trainings-)
     - [Books 📚](#books-)
@@ -30,11 +31,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 ## Infrastructure 🏗️
 
-### Hosting 🌐
-
-| Project     | Description      | Usage or Example |
-| ------- | ----------- | ---------------- |
-| [Green Web Foundation Directory](https://app.greenweb.org/directory/) | The directory contains listing of verified green hosting providers in world | [README.md](./infrastructure/hosting/green-web-directory/README.md) |
+### Cloud ☁️
 
 ### Kubernetes ☸️
 
@@ -43,6 +40,12 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | [kube-green](https://kube-green.dev/) | An operator to reduce CO2 footprint of your clusters | [README.md](./infrastructure/kubernetes/kube-green/README.md) |
 |[kepler](https://sustainable-computing.io/)| Kepler (Kubernetes-based Efficient Power Level Exporter) is a Prometheus exporter.| [README.md](./infrastructure/kubernetes/kepler/README.md) |
 
+### Hosting 🌐
+
+| Project     | Description      | Usage or Example |
+| ------- | ----------- | ---------------- |
+| [Green Web Foundation Directory](https://app.greenweb.org/directory/) | The directory contains listing of verified green hosting providers in world | [README.md](./infrastructure/hosting/green-web-directory/README.md) |
+
 ## Resources 📘
 
 ### Trainings 👩‍🏫
@@ -50,6 +53,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Name | Cost | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [Green Software for Practitioners (LFC131)](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/) | Free | [README.md](./resources/trainings/lfc-131/README.md) |
+| [Sustainable IT for Beginners](https://tcocertified.com/sustainable-it-for-beginners/) | Free | [README.md](./resources/trainings/sustainable-it-for-beginners/README.md) |
 
 ### Books 📚
 
@@ -67,6 +71,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 | Name | Membership | Details |
 | ------- | ----------- | ---------------- |
+| [TAG Environmental Sustainability](https://tag-env-sustainability.cncf.io/) | Public | [README.md](./resources/groups/tag-environmental-sustainability/README.md) |
 | [Green Software Ireland](https://www.meetup.com/green_software_ireland/) | Public | [README.md](./resources/groups/green-software-ireland/README.md) |
 
 ### Helpful Links 🔗
