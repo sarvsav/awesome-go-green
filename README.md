@@ -70,6 +70,8 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Name | Host | Details |
 | ------- | ----------- | ---------------- |
 | [Environment Variables](https://podcast.greensoftware.foundation/) | The Green Software Foundation | [README.md](./resources/podcasts/environment-variables/README.md) |
+| ------- | ----------- | ---------------- |
+| [Green IT on a Cloud](https://open.spotify.com/show/1oSqlKOSOf9W4cELSoUewS) | Rob Gillam | [README.md](./resources/podcasts/green-it-on-cloud/README.md) |
 
 ### Groups 👥
 
