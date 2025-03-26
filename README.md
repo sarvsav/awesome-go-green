@@ -10,6 +10,8 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 
 - [Awesome Go-Green 🌳](#awesome-go-green-)
   - [Software 💻](#software-)
+    - [Coding Practices 🛠️](#coding-practices-️)
+    - [Tools 🧰](#tools-)
   - [ML \& AI 🤖](#ml--ai-)
   - [Infrastructure 🏗️](#infrastructure-️)
     - [Cloud ☁️](#cloud-️)
@@ -29,6 +31,14 @@ Enjoying our collection of tools for green development 🌱? Show your support b
   - [Thank you ❤️](#thank-you-️)
 
 ## Software 💻
+
+### Coding Practices 🛠️
+
+### Tools 🧰
+
+| Project     | Description      | Usage or Example |
+| ------- | ----------- | ---------------- |
+| [PowerLetrics](https://github.com/green-kernel/powerletrics) | A tool to see what process is using how much resources on Linux | [README.md](./software/tools/powerletrics/README.md) |
 
 ## ML & AI 🤖
 
