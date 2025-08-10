@@ -39,6 +39,7 @@ Enjoying our collection of tools for green development 🌱? Show your support b
 | Project     | Description      | Usage or Example |
 | ------- | ----------- | ---------------- |
 | [PowerLetrics](https://github.com/green-kernel/powerletrics) | A tool to see what process is using how much resources on Linux | [README.md](./software/tools/powerletrics/README.md) |
+| [JobRunr v8](https://github.com/jobrunr/jobrunr) | An extremely easy way to perform background processing in Java. Backed by persistent storage. Open and free for commercial use. | [README.md](./software/tools/jobrunr/README.md) |
 
 ## ML & AI 🤖
 
