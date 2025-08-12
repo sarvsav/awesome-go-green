@@ -9,7 +9,7 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4 # Uploads the repository content to GitHub Actions runner
+    - uses: actions/checkout@v5 # Uploads the repository content to GitHub Actions runner
     - uses: actions/labeler@main
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
