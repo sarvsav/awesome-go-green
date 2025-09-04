@@ -7,7 +7,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           stale-issue-message: 'It seems that this issue has been inactive for a while. In order to keep our repository organized and ensure that active issues and PRs are given priority, we will be marking this as stale.'
           stale-pr-message: 'This pull request has been open for a while without any recent activity. We are eager to review and merge it if it is still relevant, but to keep our PR queue manageable, we will need some input from you.'
