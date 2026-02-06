@@ -10,7 +10,7 @@
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <jobrunr.version>8.4.0</jobrunr.version>
+    <jobrunr.version>8.4.2</jobrunr.version>
   </properties>
 
   <dependencies>
