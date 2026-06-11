@@ -11,7 +11,7 @@ jobs:
       issues: write
     steps:
       - name: 'Auto-assign issue'
-        uses: pozil/auto-assign-issue@v1
+        uses: pozil/auto-assign-issue@v4.0.1
         with:
           assignees: sarvsav
           allowSelfAssign: true
